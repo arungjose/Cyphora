@@ -87,7 +87,7 @@ def main():
         print(f"Scraped CSS file URL: https://ipfs.io/ipfs/{folder_cid}/style.css")
 
     f=open("mirror.txt","w")
-    mirror="https:ipfs.io/ipfs/"+folder_cid
+    mirror="https:ipfs.io/ipfs/"+str(folder_cid)
     f.write(mirror)
     f.close()
 if __name__ == "__main__":
