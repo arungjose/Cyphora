@@ -1,13 +1,14 @@
-# Tor state file last generated on 2025-03-08 15:07:16 local time
+# Tor state file last generated on 2025-03-08 15:21:43 local time
 # Other times below are in UTC
 # You *do not* need to edit this file.
 
 CircuitBuildTimeBin 595 1
 CircuitBuildTimeBin 605 1
 CircuitBuildTimeBin 615 1
-CircuitBuildTimeBin 625 3
+CircuitBuildTimeBin 625 4
 CircuitBuildTimeBin 635 1
 CircuitBuildTimeBin 645 1
+CircuitBuildTimeBin 655 1
 CircuitBuildTimeBin 665 3
 CircuitBuildTimeBin 675 2
 CircuitBuildTimeBin 685 1
@@ -19,12 +20,14 @@ CircuitBuildTimeBin 755 4
 CircuitBuildTimeBin 765 3
 CircuitBuildTimeBin 775 1
 CircuitBuildTimeBin 785 1
+CircuitBuildTimeBin 795 1
 CircuitBuildTimeBin 805 2
-CircuitBuildTimeBin 815 3
+CircuitBuildTimeBin 815 4
 CircuitBuildTimeBin 835 2
 CircuitBuildTimeBin 845 1
 CircuitBuildTimeBin 865 2
 CircuitBuildTimeBin 875 2
+CircuitBuildTimeBin 885 1
 CircuitBuildTimeBin 895 4
 CircuitBuildTimeBin 905 1
 CircuitBuildTimeBin 935 2
@@ -39,8 +42,8 @@ CircuitBuildTimeBin 1065 1
 CircuitBuildTimeBin 1075 1
 CircuitBuildTimeBin 1085 1
 CircuitBuildTimeBin 1095 2
-CircuitBuildTimeBin 1105 3
-CircuitBuildTimeBin 1125 1
+CircuitBuildTimeBin 1105 4
+CircuitBuildTimeBin 1125 2
 CircuitBuildTimeBin 1145 2
 CircuitBuildTimeBin 1155 1
 CircuitBuildTimeBin 1165 2
@@ -73,8 +76,8 @@ CircuitBuildTimeBin 5625 1
 CircuitBuildTimeBin 5665 5
 CircuitBuildTimeBin 8895 1
 Dormant 0
-Guard in=default rsa_id=58A2A0E849E9E3692F7B136223507E93CB099150 nickname=Unnamed sampled_on=2025-03-07T16:51:22 sampled_idx=0 sampled_by=0.4.8.14 listed=1 confirmed_on=2025-02-27T03:06:06 confirmed_idx=0 pb_use_attempts=55.000000 pb_use_successes=55.000000 pb_circ_attempts=108.000000 pb_circ_successes=106.000000 pb_successful_circuits_closed=100.000000 pb_collapsed_circuits=6.000000
-Guard in=default rsa_id=5D15E37B9CE27E3A7A15B93AA1670FCB27D4C0AB nickname=Sabe sampled_on=2025-02-27T02:41:19 sampled_idx=1 sampled_by=0.4.8.14 listed=1 confirmed_on=2025-02-25T00:05:01 confirmed_idx=1 pb_use_attempts=56.000000 pb_use_successes=56.000000 pb_circ_attempts=107.000000 pb_circ_successes=104.000000 pb_successful_circuits_closed=101.000000 pb_collapsed_circuits=3.000000 pb_timeouts=1.000000
+Guard in=default rsa_id=58A2A0E849E9E3692F7B136223507E93CB099150 nickname=Unnamed sampled_on=2025-03-07T16:51:22 sampled_idx=0 sampled_by=0.4.8.14 listed=1 confirmed_on=2025-02-27T03:06:06 confirmed_idx=0 pb_use_attempts=55.000000 pb_use_successes=55.000000 pb_circ_attempts=110.000000 pb_circ_successes=108.000000 pb_successful_circuits_closed=102.000000 pb_collapsed_circuits=6.000000
+Guard in=default rsa_id=5D15E37B9CE27E3A7A15B93AA1670FCB27D4C0AB nickname=Sabe sampled_on=2025-02-27T02:41:19 sampled_idx=1 sampled_by=0.4.8.14 listed=1 confirmed_on=2025-02-25T00:05:01 confirmed_idx=1 pb_use_attempts=56.000000 pb_use_successes=56.000000 pb_circ_attempts=108.000000 pb_circ_successes=105.000000 pb_successful_circuits_closed=102.000000 pb_collapsed_circuits=3.000000 pb_timeouts=1.000000
 Guard in=default rsa_id=474EA76AC6B5BA6656560A2C1465C2A299751AD2 nickname=jello sampled_on=2025-03-04T18:08:06 sampled_idx=2 sampled_by=0.4.8.14 listed=1 confirmed_on=2025-03-05T20:26:44 confirmed_idx=3 pb_use_attempts=32.000000 pb_use_successes=32.000000 pb_circ_attempts=81.000000 pb_circ_successes=81.000000 pb_successful_circuits_closed=71.000000 pb_collapsed_circuits=10.000000 pb_timeouts=7.000000
 Guard in=default rsa_id=EDDD1EE1E5EF2C35C70C8FED5A52EF46E08597AF nickname=Unnamed sampled_on=2025-03-08T00:10:29 sampled_idx=3 sampled_by=0.4.8.14 listed=1 confirmed_on=2025-03-07T00:44:09 confirmed_idx=5
 Guard in=default rsa_id=BA5C66C49D22DE4E06D0869A10F93BF47EC0122C nickname=billiejean sampled_on=2025-03-03T05:24:58 sampled_idx=4 sampled_by=0.4.8.14 listed=1 confirmed_on=2025-02-25T00:13:03 confirmed_idx=2
@@ -95,6 +98,7 @@ Guard in=default rsa_id=65A398E9A697A4645937B086CDA1D9A5C57B9509 nickname=Quetza
 Guard in=default rsa_id=56927E61B51E6F363FB55498150A6DDFCF7077F2 nickname=Akka sampled_on=2025-03-02T06:03:18 sampled_idx=19 sampled_by=0.4.8.14 listed=1
 Guard in=default rsa_id=5A6976353F19DAB6EB63A2CB95C00039B7D4064A nickname=mwittig1 sampled_on=2025-03-07T02:30:49 sampled_idx=20 sampled_by=0.4.8.14 listed=1
 Guard in=default rsa_id=D2F05648A73CB0CBA7D254D8D12BB3181408FBAE nickname=wormhole sampled_on=2025-02-24T10:05:07 sampled_idx=21 sampled_by=0.4.8.14 listed=1
-LastWritten 2025-03-08 09:37:16
+LastWritten 2025-03-08 09:51:43
+MinutesSinceUserActivity 1
 TorVersion Tor 0.4.8.14 (git-5d040a975df7a060)
-TotalBuildTimes 121
+TotalBuildTimes 128

@@ -1,0 +1,46 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.content {
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Limit maximum width */
+    text-align: center;
+}
+
+.content p {
+    margin-bottom: 20px;
+    text-align: justify; /* Justify paragraphs */
+    display: block; /* Make paragraphs blocks */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .heading {
+        font-size: 20px; /* Smaller heading font */
+    }
+
+    .content {
+        width: 95%; /* Further increase width */
+    }
+
+    .content p {
+        font-size: 16px; /* Smaller paragraph font */
+    }
+}
