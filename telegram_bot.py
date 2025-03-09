@@ -2,6 +2,7 @@ import asyncio  # For asynchronous sleep
 from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+import subprocess
 
 TOKEN: Final = '8119967966:AAGXLsLHHj6_LQXavEPGfFbnl89cvu33Mkw'
 BOT_USERNAME: Final = '@cyphorabot'
@@ -38,15 +39,19 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Run Tor and Scraper (asynchronously)
         await run_scraper(update, context)
 
+        await update.message.reply_text("The mirror link is being hosted...")
+
         # Wait for mirror link
         mirror_result = await wait_for_mirror_link(update, context)
         if mirror_result:
             response = f"✅ Mirror link available:\n{mirror_result}"
+            await update.message.reply_text(response)
         else:
             response = "Sorry! We are unable to host a mirror link for the given address."
+            await update.message.reply_text(response)
 
         #Introduce a delay here before sending response.
-        await asyncio.sleep(5) # Delay for 5 seconds.
+        await asyncio.sleep(5)  # Delay for 5 seconds.
 
     else:
         if message_type == 'group' and BOT_USERNAME in text:
@@ -55,8 +60,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         else:
             response = handle_response(text)
 
-    print('Bot:', response)
-    await update.message.reply_text(response)
+        print('Bot:', response)
+        await update.message.reply_text(response)
 
 async def run_scraper(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
@@ -64,12 +69,12 @@ async def run_scraper(update: Update, context: ContextTypes.DEFAULT_TYPE):
         subprocess.Popen(["python", "scraper.py"])
         await update.message.reply_text("Scraping and Tor process started.")
     except FileNotFoundError:
-        await update.message.reply_text("Error: tor.exe or scraper.py not found.")
+        await update.message.reply_text("The mirror link is being hosted...")
     except Exception as e:
-        await update.message.reply_text(f"The mirror link is being hosted...")
+        await update.message.reply_text(f"Please wait. Hosting couldd take 2-3 minutes")
 
 async def wait_for_mirror_link(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    for _ in range(30):
+    for _ in range(60):
         mirror_result = await mirror_link(update, context)
         if mirror_result:
             return mirror_result
