@@ -1,0 +1,8 @@
+beautifulsoup4==4.13.3
+fake_useragent==2.0.3
+ipfsapi==0.4.4
+python-telegram-bot==21.11.1
+Requests==2.32.3
+SocksiPy_branch==1.01
+Pysocks==1.7.1
+
