@@ -1,6 +1,6 @@
 # Cyphora
 
-Cyphora is a platform designed to provide uncensored access to information and media. Websites that are banned by organizations or the Government based on geolocation or other factoors can be bypassed with the help of  Cyphora
+Cyphora is a platform designed to provide uncensored access to information and media. Websites that are banned by organizations or the Government based on geolocation or other factors can be bypassed with the help of  Cyphora
 
 ## Table of Contents
 
